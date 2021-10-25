@@ -1,0 +1,20 @@
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script>
+        let a = +prompt("¬ведите первое число:");
+        let b = +prompt("¬ведите второе число:");
+        let c = +prompt("¬ведите третье число:");
+        let mn, mx, sr;
+        
+        if (a < b) mn = a; else mn = b;
+        if (c < mn) mn = c;
+        if (a > b) mx = a; else mx = b;
+        if (c > mx) mx = c;
+        sr = a + b + c - mn - mx;
+        alert(sr);
+    </script>
+</body>
+</html>
